@@ -54,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$gender = test_input($_POST["gender"]);
 	}
 	if ($error === false) {
+	$_SESSION['issubmit'] = true;
 header('location: thank.php');
 	}
 }
